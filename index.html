@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Task</title>
+    <link rel="stylesheet" href="./style.css">
+<!-- Inter font -->
+ 
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <span class="line1"></span>
+            <h2>
+                Bundle & Save
+            </h2>
+            <span class="line2"></span>
+        </div>
+        <div class="price-container">
+            <div class="pair-1" id="price-pair-1">
+                <!-- separating into 2 divs which is top and bottom to add event listener for displaying the bottom part only on clicking -->
+                <div class="top" id="top-1">
+                    <!-- left part for button and text -->
+                    <div class="left">
+                        <!-- separating into divs to display in flex row manner -->
+                        <div class="button" id="button-1">
+                            <button id="btn-1"></button>
+                        </div>
+                        <div class="price">
+                           <div> <p class="qty">1 Pair</p></div>
+                           <div> <p class="rate">DKK 195.00</p></div>
+                        </div>
+                    </div>
+                    <!-- right part for discount -->
+                    <div class="right">50% OFF</div>
+                </div>
+                <div class="bottom" id="bottom-1">
+                    <!-- separated size and color into two divs so that it will showed in flex row manner -->
+                    <div class="size">
+                        <!-- size div will show in flex coloumn manner -->
+                        <div><p class="select-text">Size</p></div>
+                        
+                        <div class="size-1">
+                            <!-- separate divs will make the text and dropdown horizontally -->
+                            <div><p class="set">#1</p></div>
+                            <div><select name="size" id="size">
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                             </select></div>
+                        </div>
+                        <div class="size-2">
+                             <!-- separate divs will make the text and dropdown horizontally -->
+                            <div><p class="set">#2</p></div>
+                            <div><select name="size" id="size">
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                             </select></div>
+                        </div>
+                     </div>
+                     <div class="color">
+                         <!-- separate divs will make the text and dropdown vertically alligned -->
+                        <div><p class="select-text">Color</p></div>
+                        <div class="color-1">
+                            <select name="color" id="color">
+                                <option value="s">Color</option>
+                                <option value="m">B</option>
+                                <option value="l">G</option>
+                                <option value="xl">V</option>
+                             </select>
+                        </div>
+                        <div class="color-2">
+                            <select name="color" id="color">
+                                <option value="s">Color</option>
+                                <option value="m">B</option>
+                                <option value="l">G</option>
+                                <option value="xl">V</option>
+                             </select>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <!-- 2nd div -->
+            <div class="pair-2" id="price-pair-2">
+                 <!-- separating into 2 divs which is top and bottom to add event listener for displaying the bottom part only on clicking --> 
+                <div class="top" id="top-2">
+                    <!-- left part for button and text -->
+                 <div class="left">
+                     <!-- separating into divs to display in flex row manner -->
+                    <div class="button" id="button-2">
+                        <button id="btn-2"></button>
+                    </div>
+                    <div class="price">
+                        <div> <p class="qty">2 Pair</p></div>
+                           <div> <p class="rate">DKK 345.00</p></div>
+                    </div>
+                 </div>
+                 <div class="cut">
+                     <p>DKK 195.00</p>
+                 </div>
+                 <div class="right">
+                    <!-- right part for discount -->
+                     <div id="special">Most Popular</div>
+                     <div>40% OFF</div>
+                 </div>
+                </div>
+                <div class="bottom" id="bottom-2">
+                     <!-- separated size and color into two divs so that it will showed in flex row manner -->
+                 <div class="size">
+                     <!-- size div will show in flex coloumn manner -->
+                    <div><p class="select-text">Size</p></div>
+                    
+                    <div class="size-1">
+                        <!-- separate divs to make the text and dropdown align horizontally -->
+                        <div><p class="set">#1</p></div>
+                        <div><select name="size" id="size">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                         </select></div>
+                    </div>
+                    <div class="size-2">
+                        <!-- separate divs to make the text and dropdown align horizontally -->
+                        <div><p class="set">#2</p></div>
+                        <div><select name="size" id="size">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                         </select></div>
+                    </div>
+                 </div>
+                 <div class="color">
+                    <!-- separate divs will make the text and dropdown vertically alligned -->
+                    <div><p class="select-text">Color</p></div>
+                    <div class="color-1">
+                        <select name="color" id="color">
+                            <option value="s">Color</option>
+                            <option value="m">B</option>
+                            <option value="l">G</option>
+                            <option value="xl">V</option>
+                         </select>
+                    </div>
+                    <div class="color-2">
+                        <select name="color" id="color">
+                            <option value="s">Color</option>
+                            <option value="m">B</option>
+                            <option value="l">G</option>
+                            <option value="xl">V</option>
+                         </select>
+                    </div>
+                 </div>
+                </div>
+             </div>
+             <!-- 3rd div -->
+            <div class="pair-3" id="price-pair-3">
+                <!-- separating into 2 divs which is top and bottom to add event listener for displaying the bottom part only on clicking --> 
+                <div class="top" id="top-3">
+                     <!-- left part for button and text -->
+                    <div class="left">
+                        <!-- separating into divs to display in flex row manner -->
+                        <div class="button" id="button-3">
+                            <button id="btn-3"></button>
+                        </div>
+                        <div class="price">
+                            <div> <p class="qty">3 Pair</p></div>
+                           <div> <p class="rate">DKK 528.00</p></div>
+                        </div>
+                    </div>
+                    <div class="right">60% OFF</div>
+                </div>
+                <div class="bottom" id="bottom-3">
+                    <!-- separated size and color into two divs so that it will showed in flex row manner -->
+                    <div class="size">
+                        <!-- size div will show in flex coloumn manner -->
+                        <div><p class="select-text">Size</p></div>
+                       <div class="size-1">
+                        <div><p class="set">#1</p></div>
+                            <div><select name="size" id="size">
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                             </select></div>
+                       </div>
+                       <div class="size-2">
+                        <div><p class="set">#2</p></div>
+                        <div><select name="size" id="size">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                         </select></div>
+                       </div>
+                    </div>
+                    <div class="color">
+                        <!-- color div will show in flex coloumn manner -->
+                       <div><p class="select-text">Color</p></div>
+                       <div class="color-1">
+                           <select name="color" id="color">
+                               <option value="s">Color</option>
+                               <option value="m">B</option>
+                               <option value="l">G</option>
+                               <option value="xl">V</option>
+                            </select>
+                       </div>
+                       <div class="color-2">
+                           <select name="color" id="color">
+                               <option value="s">Color</option>
+                               <option value="m">B</option>
+                               <option value="l">G</option>
+                               <option value="xl">V</option>
+                            </select>
+                       </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+         <!-- 4th div of 2 paragraphs at the both end at bottom -->
+        <div class="final">
+            <!-- two diffrent divs to keep both texts in a line horizontally and keep spacing in between  -->
+            <div class="left-final">
+                <p>Free 2 Day Shipping</p>
+            </div>
+            <div class="right-final">
+                <p>Total: <b id="final-text">DKK 360.00</b></p>
+            </div>
+        </div>
+        <!-- 5th div for add to cart button -->
+        <div class="cart">
+            <button type="submit">+ Add to Cart</button>
+        </div>
+        <!-- last div -->
+        <div class="pumper">
+            <div class="logo">
+                <!-- logo div will make a border surrounding to the button like a circle -->
+                <p>c</p>
+            </div>
+            <div class="nothing">
+                <p>Powered by pumper</p>
+            </div>
+        </div>   
+    </div>
+    <script src="./script.js"> </script>
+    
+</body>
+</html>

@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'MetropolisNF', sans-serif;
+    position: relative;
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+    /* font-family: 'Inter', sans-serif; */
+}
+body{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.container{
+    display: flex;
+    /* flex display column will make each and every div inside container in a column manner  */
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    /* margin-top: 30px; */
+    justify-content: space-around;
+    
+}
+.heading{
+    width: 100%;
+    /* height: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 30px; */
+}
+.heading h2{
+    color: #007F61;
+    font-size: 1.5rem;
+    font-weight: 500;
+   
+}
+/* two divs of line which is before and after heading text */
+.line1 ,.line2{
+    width: 33%;
+    border: 1px solid #C8C8C8;
+   
+}
+/* Each pair div layout and flex positioning */
+.pair-1,.pair-2,.pair-3{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #C8C8C8;
+    height: fit-content;
+    row-gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 4px;
+}
+/* Top div Of each pair div are taken in one class to assign flex positioning */
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* bottom div Of each pair div are taken in one class to assign flex positioning */
+.bottom{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    display: none;
+   /* display only on clicking the parent div (pair-1,pair-2,pair-3) */
+}
+/* Size and color div of every pair div are taken inside 2 separate class(Size,Color) and assigning their flex position */
+.size,.color{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+   
+}
+/* to keep the text and dropdown in 1 row inside size div */
+.size-1,.size-2{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+    align-items: left;
+}
+/* layout of the text inside every size-1 and size 2 div */
+.set{
+    margin-right: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 11px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    padding-top: 8px;
+}
+/* layout of dropdown of size */
+.size select{
+    /* margin: 10px; */
+    width: 65px;
+    height: 26px;
+    border-radius: 2px;
+    border: 1px solid #D9D9D9;
+}
+/* layout of dropdown of color */
+.color select{
+    margin-left: 10px;
+    width: 65px;
+    height: 26px;
+    border-radius: 2px;
+    border: 1px solid #D9D9D9;
+ 
+}
+/* top div of each pair div flex positioning and layout */
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+}
+/* 100% width of every child div inside container div */
+/* .pair-1,.pair-2,.pair-3,.final,.cart,.pumper{
+    width: 100%;
+} */
+/* button surrounding div to make circular */
+.button{
+    width: 16px;
+    height:16px ;
+    border-radius: 50%;
+    border: 2px solid #007F61;
+    padding: 2px;
+}
+/* button layout  */
+.button button{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    
+}
+/* top div left flex positioning to keep text horizontally */
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+/* top div right to make text columnwise */
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    text-align: right;
+    font-weight: 600;
+}
+/* the "most popular text" inside pair-2 */
+#special{
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color:  #007F61;
+    font-size: 15px;
+    line-height: 15.31px;
+   
+}
+/* cut div layout inside pair-2  */
+.cut{
+    /* position: relative; */
+    width: 55px;
+    height: 12px;
+    opacity: 30%;
+}
+/* text layout inside cut div in pair-2 */
+.cut p{
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 13px;
+    text-decoration-line: line-through;
+    color: #000000;
+}
+/* layout of the div to make it a line on top of text inside pair-2 */
+#line{
+    width: 100%;
+    height: 0px;
+    border: 1px solid #9F9F9F;
+    top: 6px;
+}
+/* flex positioning of price div inside every top div */
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 10px;
+}
+/* layout of text inside rate div */
+.rate {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 15px;
+    color: #000000;
+}
+/* layout of every qty div inside top divs */
+.qty{
+    font-size: 15px;
+    font-weight: 400;
+    color: #000000;
+}
+/* dropdown text layout */
+.select-text{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #000000;
+}
+ 
+#size,#color{
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    line-height: 14px;
+}
+/*  to make both text align ina line and spacing in between of text div above cart button  */
+.final{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px;
+    padding: 10px 0;
+}
+/* cart layout */
+.cart{
+    width: 100%;
+    height: 48px;
+}
+/* cart button layout */
+.cart button{
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 20px;
+    border: 1px solid #007F61;
+    background-color: #007F61;
+    border-radius:4px;
+    outline: none;
+    padding: 6px 0;
+}
+/* last div text positioning */
+.pumper{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding:10px 0;
+}
+/* last div font styling and layout */
+.nothing p{
+    font-style: italic;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+    color: #000000;
+}
+/* making the div covering text layout circular present in the last div */
+.logo{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+}
+/* text inside circle layout and positioning*/
+.logo p{
+    width: 8px;
+    line-height: 9px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    padding: 1px;
+}
+.price-container{
+    display: flex;
+    flex-direction: column;
+    row-gap:20px;
+    padding: 0;
+}
+.left-final p{
+    color: #007F61;
+}
+.right-final p{
+    text-align: right;
+}
+/* for mobile view */
+@media only screen and (max-width: 620px){
+    .heading h2{
+        font-size: 1rem;
+    }
+    .line1,.line2{
+        width:30%;
+    }
+    .bottom{
+        justify-content: flex-start;
+    }
+}
+@media only screen and (max-width: 342px){
+    .line1,.line2{
+        width:25%;
+    }
+    .rate{
+        font-size: 0.9rem
+    }
+}
